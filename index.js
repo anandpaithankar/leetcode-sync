@@ -39,7 +39,7 @@ async function commit(octokit, owner, repo, commitInfo, treeSHA, latestCommitSHA
 
   const treeData = [
     {
-      path: `problems/${name}/solution.${LANG_TO_EXTENSION[submission.lang]}`,
+      path: `leetcode/${name}/solution.${LANG_TO_EXTENSION[submission.lang]}`,
       mode: '100644',
       content: submission.code,
     }
